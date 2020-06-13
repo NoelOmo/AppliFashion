@@ -26,6 +26,19 @@ public class ProductListPageTest extends BaseTest {
         Assert.assertTrue(mProductPage.isFilterColumnVisible());
     }
 
+    @Test(groups = {"desktop"})
+    public void test_filterForBlackShoes() {
+        mProductPage.filterForBlackShoes();
+        Assert.assertTrue(mProductPage.areTwoBlackShoesDisplayed());
+    }
+
+    @Test(groups = {"mobile", "tablet"})
+    public void test_filterForBlackShoesOnMobileAndTablets() {
+        mProductPage.openFilterMenu();
+        mProductPage.filterForBlackShoes();
+        Assert.assertTrue(mProductPage.areTwoBlackShoesDisplayed());
+    }
+
     @Test(groups = {"mobile"})
     public void test_WishlistIconIsHiddenOnMobile() {
         Assert.assertFalse(mProductPage.isWishlistIconVisible());

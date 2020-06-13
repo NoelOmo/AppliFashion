@@ -21,4 +21,14 @@ public class ProductDetailsPageTest extends BaseTest {
     public void test_VerifySalePriceIsProperlyStyled() {
         Assert.assertTrue(mProductDetailsPage.isSalePriceStyled());
     }
+
+    @Test(groups = {"desktop","tablet","mobile"})
+    public void test_VerifyDefaultSizeIsSmall() {
+        Assert.assertEquals("Small (S)", mProductDetailsPage.getCurrentSize());
+    }
+
+    @Test(groups = {"desktop","tablet","mobile"})
+    public void test_VerifyProductSKUIsDisplayed() {
+        Assert.assertTrue(mProductDetailsPage.isProductSKUDisplayed());
+    }
 }
