@@ -23,8 +23,8 @@ public class Initializer {
         return SINGLE_INSTANCE;
     }
 
-    public WebDriver initializeBrowser(String browser) {
-        switch (browser){
+    public WebDriver initializeBrowser() {
+        switch (System.getProperty("browser")){
             case Constants.CHROME_BROWSER:
                 System.setProperty("webdriver.chrome.driver",".\\chromedriver.exe");
                 driver = new ChromeDriver();
