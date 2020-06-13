@@ -1,9 +1,6 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
@@ -33,6 +30,12 @@ public class ProductPage extends BasePage {
     @FindBy(id = "INPUTtext__formcontro__62")
     private WebElement mblSearchField;
 
+    @FindBy(id = "A__wishlist__52")
+    private WebElement mblWishlistIcon;
+
+    @FindBy(id = "LI____201")
+    private WebElement mblChangeViewButtons;
+
 
     public ProductPage(WebDriver webDriver) {
         super(webDriver);
@@ -54,6 +57,23 @@ public class ProductPage extends BasePage {
         return dskFilterColumn.isEnabled() && dskFilterColumn.isDisplayed();
     }
 
+    public Boolean isWishlistIconVisible() {
+        try {
+            return mblWishlistIcon.isDisplayed() && mblWishlistIcon.isEnabled();
+        }catch (NoSuchElementException ex) {
+            System.out.println(ex.getLocalizedMessage());
+            return false;
+        }
+    }
+
+    public Boolean areChangeViewButtonsVisible() {
+        try {
+            return mblChangeViewButtons.isDisplayed() && mblChangeViewButtons.isEnabled();
+        }catch (NoSuchElementException ex) {
+            System.out.println(ex.getLocalizedMessage());
+            return false;
+        }
+    }
     public Boolean isTooltipVisible(WebElement element) {
         WebElement el = element.findElement(By.tagName("ul"));
         return el.isDisplayed() && el.isEnabled();

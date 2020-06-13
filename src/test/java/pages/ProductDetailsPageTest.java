@@ -3,6 +3,7 @@ package pages;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import utils.Initializer;
 
 public class ProductDetailsPageTest extends BaseTest {
 
@@ -11,7 +12,7 @@ public class ProductDetailsPageTest extends BaseTest {
     @BeforeClass(groups = {"desktop","tablet","mobile"})
     public void setupClass(){
         mProductDetailsPage = new ProductDetailsPage(webDriver);
-        webDriver.get("https://demo.applitools.com/gridHackathonV1.html");
+        webDriver.get(Initializer.getInstance().getBaseUrl("V1"));
         mProductDetailsPage.navigateToProductDetails();
         browserOperations.waitForPageToLoad();
     }

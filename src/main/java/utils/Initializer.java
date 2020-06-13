@@ -36,4 +36,15 @@ public class Initializer {
         }
         return driver;
     }
+
+    public String getBaseUrl(String version) {
+        switch (version) {
+            case "V1":
+                return "https://demo.applitools.com/gridHackathonV1.html";
+            case "V2":
+                return "https://demo.applitools.com/gridHackathonV2.html";
+            default:
+                return "https://demo.applitools.com/gridHackathonV1.html";
+        }
+    }
 }

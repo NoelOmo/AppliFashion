@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import utils.Initializer;
 
 public class ProductListPageTest extends BaseTest {
 
@@ -12,13 +13,7 @@ public class ProductListPageTest extends BaseTest {
     @BeforeClass(groups = {"desktop","tablet","mobile"})
     public void setupClass(){
         mProductPage = new ProductPage(webDriver);
-        webDriver.get("https://demo.applitools.com/gridHackathonV1.html");
-    }
-
-    @Test(groups = {"desktop", "tablet"})
-    public void test_SearchBarIsDisplayedOnDesktopAndTablet() {
-        Assert.assertTrue(mProductPage.isDesktopSearchBarVisible()
-                && !mProductPage.isMobileSearchBarVisible());
+        webDriver.get(Initializer.getInstance().getBaseUrl("V1"));
     }
 
     @Test(groups = {"desktop"})
@@ -29,6 +24,27 @@ public class ProductListPageTest extends BaseTest {
     @Test(groups = {"desktop"})
     public void test_FilterMenuIsDisplayedOnDesktop() {
         Assert.assertTrue(mProductPage.isFilterColumnVisible());
+    }
+
+    @Test(groups = {"mobile"})
+    public void test_WishlistIconIsHiddenOnMobile() {
+        Assert.assertFalse(mProductPage.isWishlistIconVisible());
+    }
+
+    @Test(groups = {"desktop", "tablet"})
+    public void test_SearchBarIsDisplayedOnDesktopAndTablet() {
+        Assert.assertTrue(mProductPage.isDesktopSearchBarVisible()
+                && !mProductPage.isMobileSearchBarVisible());
+    }
+
+    @Test(groups = {"mobile", "tablet"})
+    public void test_MainMenuIsNotDisplayedOnMobileAndTablets() {
+        Assert.assertFalse(mProductPage.isDesktopMenuVisible());
+    }
+
+    @Test(groups = {"tablet","mobile"})
+    public void test_ChangeViewButtonsAreNotVisibleOnTabletAndMobile() {
+        Assert.assertFalse(mProductPage.areChangeViewButtonsVisible());
     }
 
     @Test(groups = {"desktop","tablet","mobile"})

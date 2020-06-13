@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestSuite" thread-count="2" parallel="tests">
-<!--    <test name="ChromeTest 1200">-->
-<!--        <parameter name="browser" value="Chrome"/>-->
-<!--        <parameter name="width" value="1200"/>-->
-<!--        <parameter name="height" value="700"/>-->
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <include name="desktop" />-->
-<!--            </run>-->
-<!--        </groups>-->
-<!--        <classes>-->
-<!--&lt;!&ndash;            <class name="pages.ProductListPageTest"/>&ndash;&gt;-->
-<!--            <class name="pages.ProductDetailsPageTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--    <test name="FirefoxTest 1200">-->
-<!--        <parameter name="browser" value="Firefox"/>-->
-<!--        <parameter name="width" value="1200"/>-->
-<!--        <parameter name="height" value="700"/>-->
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <include name="desktop" />-->
-<!--            </run>-->
-<!--        </groups>-->
-<!--        <classes>-->
-<!--&lt;!&ndash;            <class name="pages.ProductListPageTest"/>&ndash;&gt;-->
-<!--            <class name="pages.ProductDetailsPageTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="ChromeTest 1200">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="width" value="1200"/>
+        <parameter name="height" value="700"/>
+        <groups>
+            <run>
+                <include name="desktop" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductListPageTest"/>
+            <class name="pages.ProductDetailsPageTest"/>
+        </classes>
+    </test>
+    <test name="FirefoxTest 1200">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="width" value="1200"/>
+        <parameter name="height" value="700"/>
+        <groups>
+            <run>
+                <include name="desktop" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductListPageTest"/>
+            <class name="pages.ProductDetailsPageTest"/>
+        </classes>
+    </test>
 
-<!--    <test name="ChromeTest 768">-->
-<!--        <parameter name="browser" value="Chrome"/>-->
-<!--        <parameter name="width" value="768"/>-->
-<!--        <parameter name="height" value="700"/>-->
-<!--        <groups>-->
-<!--            <run>-->
-<!--                <include name="tablet" />-->
-<!--            </run>-->
-<!--        </groups>-->
-<!--        <classes>-->
-<!--&lt;!&ndash;            <class name="pages.ProductListPageTest"/>&ndash;&gt;-->
-<!--            <class name="pages.ProductDetailsPageTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="ChromeTest 768">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="width" value="768"/>
+        <parameter name="height" value="700"/>
+        <groups>
+            <run>
+                <include name="tablet" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductListPageTest"/>
+            <class name="pages.ProductDetailsPageTest"/>
+        </classes>
+    </test>
     <test name="FirefoxTest 768">
         <parameter name="browser" value="Firefox"/>
         <parameter name="width" value="768"/>
@@ -50,6 +50,20 @@
         <groups>
             <run>
                 <include name="tablet" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductListPageTest"/>
+            <class name="pages.ProductDetailsPageTest"/>
+        </classes>
+    </test>
+    <test name="Chrome Mobile">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="width" value="500"/>
+        <parameter name="height" value="700"/>
+        <groups>
+            <run>
+                <include name="mobile" />
             </run>
         </groups>
         <classes>
