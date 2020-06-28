@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="2" parallel="tests">
+    <test name="ChromeTest 1200">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="device" value="Laptop"/>
+        <parameter name="width" value="1200"/>
+        <parameter name="height" value="700"/>
+        <classes>
+            <class name="pages.ProductDetailsPageTest"/>
+            <class name="pages.ProductListPageTest"/>
+        </classes>
+    </test>
+</suite>
