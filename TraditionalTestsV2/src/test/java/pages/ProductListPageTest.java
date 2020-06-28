@@ -14,7 +14,7 @@ public class ProductListPageTest extends BaseTest {
     @BeforeClass(groups = {"desktop","tablet","mobile"})
     public void setupClass(){
         mProductPage = new ProductPage(webDriver);
-        webDriver.get(Initializer.getInstance().getBaseUrl("V1"));
+        webDriver.get(Initializer.getInstance().getBaseUrl("V2"));
     }
 
     @Test(groups = {"desktop"})

@@ -13,7 +13,7 @@ public class ProductDetailsPageTest extends BaseTest {
     @BeforeClass(groups = {"desktop","tablet","mobile"})
     public void setupClass(){
         mProductDetailsPage = new ProductDetailsPage(webDriver);
-        webDriver.get(Initializer.getInstance().getBaseUrl("V1"));
+        webDriver.get(Initializer.getInstance().getBaseUrl("V2"));
         mProductDetailsPage.navigateToProductDetails();
         browserOperations.waitForPageToLoad();
     }
