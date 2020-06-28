@@ -23,23 +23,18 @@ public class BaseTest {
     public BrowserOperations browserOperations;
     public Initializer initializer = Initializer.getInstance();
     public Eyes eyes;
-    public Configuration configuration;
 
-    @BeforeClass(groups = {"desktop","tablet","mobile"})
-    @Parameters({"browser", "width", "height", "device"})
-    public void testSetup(String browser, String width, String height, String device) {
-        System.setProperty("browser", browser);
-        System.setProperty("viewport", width + " X " + height);
-        System.setProperty("device", device);
+    @BeforeClass
+    @Parameters()
+    public void testSetup() {
         eyes = initializer.getEyes();
         setUp(eyes);
         webDriver = initializer.initializeBrowser();
         browserOperations = new BrowserOperations(webDriver);
-        browserOperations.resizeBrowser(Integer.parseInt(width), Integer.parseInt(height));
         eyes.open(webDriver, "AppliFashion App", "Ultrafast grid hackerthon", new RectangleSize(800, 600));
     }
 
-    @BeforeMethod(groups = {"desktop","tablet","mobile"})
+    @BeforeMethod
     public void beforeMethod(ITestContext ctx,Method method) throws NoSuchMethodException {
         Method m = this.getClass().getMethod(method.getName());
         if (m.isAnnotationPresent(Report.class)) {
@@ -75,9 +70,13 @@ public class BaseTest {
         }
     }
 
-    @AfterClass(groups = {"desktop","tablet","mobile"})
+    @AfterClass
     public void tearDown() {
         webDriver.quit();
+    }
+
+    @AfterSuite
+    public void afterSuite() {
         TestResults t = eyes.close();
     }
 

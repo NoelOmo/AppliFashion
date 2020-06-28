@@ -65,3 +65,40 @@ Task: 3, Test Name: testingThisThing, DOM Id: old_price, Browser: Chrome, Viewpo
 Task: 3, Test Name: test_VerifyDefaultSizeIsSmall, DOM Id: nice-select, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
 Task: 3, Test Name: test_VerifyProductSKUIsDisplayed, DOM Id: SMALL____84, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
 Task: 3, Test Name: test_VerifySalePriceIsProperlyStyled, DOM Id: old_price, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifyDefaultSizeIsSmall, DOM Id: nice-select, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifyProductSKUIsDisplayed, DOM Id: SMALL____84, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifySalePriceIsProperlyStyled, DOM Id: old_price, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifyDefaultSizeIsSmall, DOM Id: nice-select, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifyProductSKUIsDisplayed, DOM Id: SMALL____84, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifySalePriceIsProperlyStyled, DOM Id: old_price, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_ChangeViewButtonsAreNotVisibleOnTabletAndMobile, DOM Id: LI____201, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_FilterMenuIsDisplayedOnDesktop, DOM Id: filter_col, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Fail
+Task: 1, Test Name: test_MainMenuIsDisplayedOnDesktop, DOM Id: DIV__mainmenu__15, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Fail
+Task: 1, Test Name: test_MainMenuIsNotDisplayedOnMobileAndTablets, DOM Id: DIV__mainmenu__15, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_SalePriceStrikeThrough, DOM Id: old_price, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_SearchBarIsDisplayedOnDesktopAndTablet, DOM Id: INPUTtext____42, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_TooltipDisplayedOnHover, DOM Id: grid_item, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_WishlistIconIsHiddenOnMobile, DOM Id: A__wishlist__52, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: test_filterForBlackShoes, DOM Id: LI____103|filterBtn|product_grid, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Fail
+Task: 2, Test Name: test_filterForBlackShoesOnMobileAndTablets, DOM Id: LI____205|LI____103|filterBtn|product_grid, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifyDefaultSizeIsSmall, DOM Id: nice-select, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifyProductSKUIsDisplayed, DOM Id: SMALL____84, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifySalePriceIsProperlyStyled, DOM Id: old_price, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_ChangeViewButtonsAreNotVisibleOnTabletAndMobile, DOM Id: LI____201, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_FilterMenuIsDisplayedOnDesktop, DOM Id: filter_col, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Fail
+Task: 1, Test Name: test_MainMenuIsDisplayedOnDesktop, DOM Id: DIV__mainmenu__15, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Fail
+Task: 1, Test Name: test_MainMenuIsNotDisplayedOnMobileAndTablets, DOM Id: DIV__mainmenu__15, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_SalePriceStrikeThrough, DOM Id: old_price, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_SearchBarIsDisplayedOnDesktopAndTablet, DOM Id: INPUTtext____42, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_TooltipDisplayedOnHover, DOM Id: grid_item, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: test_WishlistIconIsHiddenOnMobile, DOM Id: A__wishlist__52, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: test_filterForBlackShoes, DOM Id: LI____103|filterBtn|product_grid, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Fail
+Task: 2, Test Name: test_filterForBlackShoesOnMobileAndTablets, DOM Id: LI____205|LI____103|filterBtn|product_grid, Browser: Chrome, Viewport: 1200 X 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: test_VerifyDefaultSizeIsSmall, DOM Id: nice-select, Browser: null, Viewport: null, Device: null, Status: Pass
+Task: 3, Test Name: test_VerifyProductSKUIsDisplayed, DOM Id: SMALL____84, Browser: null, Viewport: null, Device: null, Status: Pass
+Task: 3, Test Name: test_VerifySalePriceIsProperlyStyled, DOM Id: old_price, Browser: null, Viewport: null, Device: null, Status: Pass
+Task: 1, Test Name: test_ChangeViewButtonsAreNotVisibleOnTabletAndMobile, DOM Id: LI____201, Browser: null, Viewport: null, Device: null, Status: Pass
+Task: 1, Test Name: test_FilterMenuIsDisplayedOnDesktop, DOM Id: filter_col, Browser: null, Viewport: null, Device: null, Status: Fail
+Task: 1, Test Name: test_MainMenuIsDisplayedOnDesktop, DOM Id: DIV__mainmenu__15, Browser: null, Viewport: null, Device: null, Status: Fail
+Task: 1, Test Name: test_MainMenuIsNotDisplayedOnMobileAndTablets, DOM Id: DIV__mainmenu__15, Browser: null, Viewport: null, Device: null, Status: Pass
+Task: 1, Test Name: test_SalePriceStrikeThrough, DOM Id: old_price, Browser: null, Viewport: null, Device: null, Status: Pass

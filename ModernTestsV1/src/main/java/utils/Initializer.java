@@ -46,16 +46,9 @@ public class Initializer {
     }
 
     public WebDriver initializeBrowser() {
-        switch (System.getProperty("browser")){
-            case Constants.CHROME_BROWSER:
-                System.setProperty("webdriver.chrome.driver",".\\chromedriver.exe");
-                driver = new ChromeDriver();
-                break;
-            case Constants.FIREFOX_BROWSER:
-                System.setProperty("webdriver.gecko.driver", ".\\geckodriver.exe");
-                driver = new FirefoxDriver();
-                break;
-        }
+        System.setProperty("webdriver.chrome.driver",".\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
         return driver;
     }
 
