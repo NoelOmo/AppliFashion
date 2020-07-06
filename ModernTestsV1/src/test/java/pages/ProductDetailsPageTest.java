@@ -4,39 +4,23 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utils.Initializer;
-import utils.Report;
 import utils.UFGEyes;
 
 public class ProductDetailsPageTest extends BaseTest {
 
     private ProductDetailsPage mProductDetailsPage;
 
-    @BeforeClass(groups = {"desktop","tablet","mobile"})
+    @BeforeClass(alwaysRun = true)
     public void setupClass(){
         mProductDetailsPage = new ProductDetailsPage(webDriver);
-        webDriver.get(Initializer.getInstance().getBaseUrl("V1"));
-        mProductDetailsPage.navigateToProductDetails();
+        webDriver.get(Initializer.getInstance().getBaseUrl("V1") + "?id=1");
         browserOperations.waitForPageToLoad();
+        eyes.open(webDriver, "AppliFashion App V2", "Product details page test");
     }
 
     @Test(groups = {"desktop","tablet","mobile"})
-    @Report(task = 3, domId = "old_price")
-    @UFGEyes(checkBefore = true)
-    public void test_VerifySalePriceIsProperlyStyled() {
-        Assert.assertTrue(mProductDetailsPage.isSalePriceStyled());
-    }
-
-    @Test(groups = {"desktop","tablet","mobile"})
-    @Report(task = 3, domId = "nice-select")
-    @UFGEyes(checkBefore = true)
-    public void test_VerifyDefaultSizeIsSmall() {
-        Assert.assertEquals("Small (S)", mProductDetailsPage.getCurrentSize());
-    }
-
-    @Test(groups = {"desktop","tablet","mobile"})
-    @Report(task = 3, domId = "SMALL____84")
-    @UFGEyes(checkBefore = true)
-    public void test_VerifyProductSKUIsDisplayed() {
-        Assert.assertTrue(mProductDetailsPage.isProductSKUDisplayed());
+    @UFGEyes(checkBefore = true, testName = "Ensure that Product details is correctly styled")
+    public void test_VerifyThatProductDetailsIsCorrectlyStyled() {
+        //        No steps required as this is a 100% UFG dependent test
     }
 }

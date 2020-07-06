@@ -26,3 +26,10 @@ dependencies {
     implementation 'com.applitools:eyes-selenium-java3:3.166.0'
 
 }
+
+test {
+    useTestNG() {
+        useDefaultListeners = true
+        suites "src/test/testng.xml"
+    }
+}

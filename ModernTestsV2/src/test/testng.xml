@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" >
+    <parameter name="type" value="Desktop"/>
+    <test name="Regression Suite Desktop">
+        <parameter name="type" value="Desktop"/>
+        <groups>
+            <run>
+                <include name="desktop" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductDetailsPageTest"/>
+            <class name="pages.ProductListPageTest"/>
+        </classes>
+    </test>
+    <test name="Regression Suite Mobile">
+        <parameter name="type" value="Mobile"/>
+        <groups>
+            <run>
+                <include name="mobile" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductDetailsPageTest"/>
+            <class name="pages.ProductListPageTest"/>
+        </classes>
+    </test>
+    <test name="Regression Suite Tablet">
+        <parameter name="type" value="Tablet"/>
+        <groups>
+            <run>
+                <include name="tablet" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductDetailsPageTest"/>
+            <class name="pages.ProductListPageTest"/>
+        </classes>
+    </test>
+</suite>
