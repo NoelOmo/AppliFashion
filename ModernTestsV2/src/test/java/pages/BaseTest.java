@@ -74,7 +74,7 @@ public class BaseTest {
     public static void setUp(Eyes eyes, String type) {
         Configuration config = new Configuration();
         config.setApiKey(Constants.APPLITOOLS_API_KEY);
-        config.setBatch(new BatchInfo("AppliFashion Modern Tests V2"));
+        config.setBatch(new BatchInfo("AppliFashion Modern Tests V1"));
         eyes.setConfiguration(setConfigs(type, config));
 
     }

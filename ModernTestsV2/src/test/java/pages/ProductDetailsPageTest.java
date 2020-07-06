@@ -15,7 +15,7 @@ public class ProductDetailsPageTest extends BaseTest {
         mProductDetailsPage = new ProductDetailsPage(webDriver);
         webDriver.get(Initializer.getInstance().getBaseUrl("V2") + "?id=1");
         browserOperations.waitForPageToLoad();
-        eyes.open(webDriver, "AppliFashion App V2", "Product details page test");
+        eyes.open(webDriver, "AppliFashion App V1", "Product details page test");
     }
 
     @Test(groups = {"desktop","tablet","mobile"})

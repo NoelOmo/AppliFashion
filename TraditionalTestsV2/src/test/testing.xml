@@ -31,6 +31,22 @@
         </classes>
     </test>
 
+    <test name="EdgeTest 1200">
+        <parameter name="browser" value="Edge"/>
+        <parameter name="device" value="Laptop"/>
+        <parameter name="width" value="1200"/>
+        <parameter name="height" value="700"/>
+        <groups>
+            <run>
+                <include name="desktop" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductListPageTest"/>
+            <class name="pages.ProductDetailsPageTest"/>
+        </classes>
+    </test>
+
     <test name="ChromeTest 768">
         <parameter name="browser" value="Chrome"/>
         <parameter name="device" value="Tablet"/>
@@ -48,6 +64,21 @@
     </test>
     <test name="FirefoxTest 768">
         <parameter name="browser" value="Firefox"/>
+        <parameter name="device" value="Tablet"/>
+        <parameter name="width" value="768"/>
+        <parameter name="height" value="700"/>
+        <groups>
+            <run>
+                <include name="tablet" />
+            </run>
+        </groups>
+        <classes>
+            <class name="pages.ProductListPageTest"/>
+            <class name="pages.ProductDetailsPageTest"/>
+        </classes>
+    </test>
+    <test name="EdgeTest 768">
+        <parameter name="browser" value="Edge"/>
         <parameter name="device" value="Tablet"/>
         <parameter name="width" value="768"/>
         <parameter name="height" value="700"/>

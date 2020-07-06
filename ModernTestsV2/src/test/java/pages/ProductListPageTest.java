@@ -15,7 +15,7 @@ public class ProductListPageTest extends BaseTest {
     public void setupClass(){
         mProductPage = new ProductPage(webDriver);
         webDriver.get(Initializer.getInstance().getBaseUrl("V2"));
-        eyes.open(webDriver, "AppliFashion App V2", "Product list page test");
+        eyes.open(webDriver, "AppliFashion App V1", "Product list page test");
     }
 
 

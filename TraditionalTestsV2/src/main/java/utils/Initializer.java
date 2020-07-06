@@ -33,6 +33,10 @@ public class Initializer {
                 System.setProperty("webdriver.gecko.driver", ".\\geckodriver.exe");
                 driver = new FirefoxDriver();
                 break;
+            case Constants.EDGE_BROWSER:
+                System.setProperty("webdriver.edge.driver", ".\\msedgedriver.exe");
+                driver = new FirefoxDriver();
+                break;
         }
         return driver;
     }
